@@ -1,0 +1,63 @@
+node-d3-chord (1.0.6-4) unstable; urgency=medium
+
+  * Trim trailing whitespace.
+  * Bump debhelper from old 12 to 13.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Fri, 24 Sep 2021 15:41:53 +0100
+
+node-d3-chord (1.0.6-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ Pirate Praveen ]
+  * Use node-rollup-plugin-terser (now available in the archive)
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+  * Support nocheck build profile
+  * Use pkg-js-tools auto install
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 14 Dec 2020 23:40:15 +0530
+
+node-d3-chord (1.0.6-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Make build reproducible
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 08 Jul 2019 13:16:16 +0530
+
+node-d3-chord (1.0.6-1) experimental; urgency=medium
+
+  * New upstream version 1.0.6
+  * Drop build dependency on dh-buildinfo
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Use salsa.debian.org in Vcs-* fields
+  * Use rollup.config.js
+  * Install ES module (src directory)
+  * Switch to pkg-js-tools for tests
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 18 Jun 2019 20:58:22 +0530
+
+node-d3-chord (1.0.4-3) unstable; urgency=medium
+
+  * Build using rollup (webpack was used before rollup was available in main)
+  * Bump debhelper compat to 11
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 28 Feb 2018 21:12:28 +0530
+
+node-d3-chord (1.0.4-2) unstable; urgency=medium
+
+  * Use umd module as main like upstream
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 06 Jan 2018 15:54:05 +0530
+
+node-d3-chord (1.0.4-1) unstable; urgency=low
+
+  * Initial release (Closes: #878047)
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 09 Oct 2017 12:04:09 +0530
