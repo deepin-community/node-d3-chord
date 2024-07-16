@@ -3,28 +3,28 @@ Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Build-Depends:
- debhelper-compat (= 13)
- , nodejs
- , pkg-js-tools
- , node-tape <!nocheck>
- , rollup
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-d3-array <!nocheck>
+ , node-d3-path <!nocheck>
  , node-rollup-plugin-terser
- , node-d3-array (>= 1) <!nocheck>
- , node-d3-path (>= 1) <!nocheck>
-Standards-Version: 4.5.1
-Homepage: https://d3js.org/d3-chord/
-Vcs-Git: https://salsa.debian.org/js-team/node-d3-chord.git
+ , node-tape <!nocheck>
+ , nodejs
+ , rollup
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-d3-chord
+Vcs-Git: https://salsa.debian.org/js-team/node-d3-chord.git
+Homepage: https://d3js.org/d3-chord/
 Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-d3-chord
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
- , node-d3-array (>= 1)
- , node-d3-path (>= 1)
+Depends: node-d3-array
+ , node-d3-path
+ , ${misc:Depends}
+Provides: ${nodejs:Provides}
+Multi-Arch: foreign
 Description: Visualize relationships or network flow
  This module can be used to visualize relationships or network flow with an
  aesthetically-pleasing circular layout.
